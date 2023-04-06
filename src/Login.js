@@ -45,14 +45,16 @@ const Login = () => {
 
   return (
     <div>
+      <div className='form'>
       <form onSubmit={submitHandler}>
         <h5>Login</h5>
-        Email: <input type="text" value={email} onChange={event => setEmail(event.target.value)} /> <br/>
-        Password: <input type="password" value={password} onChange={event => setPassword(event.target.value)} /> <br/>
-        <input type="submit" value="Login" />
+        Email: <br/><input type="text" value={email} onChange={event => setEmail(event.target.value)} /> <br/>
+        Password: <br/><input type="password" value={password} onChange={event => setPassword(event.target.value)} /> <br/>
+        <div className='button'><input type="submit" value="Login" /></div>
       </form>
       <p className = "link"><Link to = "/register">Register instead?</Link></p>
       {errorMessage && <p className="message">{errorMessage}</p>}
+    </div>
     </div>
   )
 }

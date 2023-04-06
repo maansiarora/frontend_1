@@ -12,15 +12,20 @@ code {
     monospace;
 }
 .header {
-  margin: 2em 0 2em 2em;
-  padding-bottom: 1em;
-  border-bottom: 1px solid;
+  padding: 1.5em;
+  background-color: rgba(227, 171, 154, 1);
 }
 
 .header a {
   margin: 0 1em 0 1em;
   font-size: 1.2em;
   text-decoration: none;
+  color:rgb(27, 27, 27);
+  font-weight: 500;
+}
+.header a:hover{
+  color:rgb(255, 255, 255);
+  font-weight: 600;
 }
 
 .content {
@@ -34,4 +39,50 @@ code {
 }
 .link{
   font-size: 0.7em;
+}
+.form
+{
+    display: block;
+    text-align: center;
+    
+}
+.form h5{
+  text-align: center;
+}
+
+form
+{
+  margin-top: 50px;
+  padding: 50px;
+  padding-top: 0;
+  background-color: rgba(245, 225, 218, 1);
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    width: 20%;
+}
+input{
+  height: 30px;
+  width: 80%;
+}
+form .button{
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  width: 50%;
+  padding-top: 20px;
+  
+}
+input[type=submit]{
+  background-color: rgba(227, 171, 154, 1);
+  height: 40px;
+  border-radius: 5px;
+  border: 0;
+  font-weight: 600;
+  font-size: large;
+}
+input[type=submit]:hover{
+  background-color: rgb(27, 27, 27);
+  color: beige;
 }
