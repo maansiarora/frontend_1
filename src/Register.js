@@ -44,14 +44,16 @@ const Register = () => {
 
     return (
         <div>
+          <div className='form'>
             <form onSubmit={submitHandler}>
                 <h5>Register</h5>
                 Email: <input type="text" value={email} onChange={event => setEmail(event.target.value)} /> <br/>
                 Username: <input type="text" value={user_name} onChange={event => setUsername(event.target.value)} /> <br/>
                 Password: <input type="password" value={password} onChange={event => setPassword(event.target.value)} /> <br/>
-                <input type="submit" value="Register" />
+                <div className='button'><input type="submit" value="Register" /></div>
             </form>
             {message && <p className="message">{message}</p>}
+            </div>
       </div>
     )
 } 

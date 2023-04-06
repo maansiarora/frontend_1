@@ -1,23 +1,25 @@
 import React from "react";
-import { getUser, resetUserSession } from './service/AuthService';
-import { useNavigate } from "react-router-dom";
+import {Link } from "react-router-dom";
+import { getUser} from './service/AuthService';
 
 
 const Main = () => {
-    const navigate = useNavigate(); 
+    
     const user = getUser();
     console.log(user)
     const user_name = user !== 'undefined' && user ? user.user_name : '';
     
 
-    const logoutHandler = () => {
-        resetUserSession();
-        navigate('/login');
-    }
+    
     return (
         <div>
-        Hello {user_name}! You have been loggined in!!!! Welcome to the home <br />
-        <input type="button" value="Logout" onClick={logoutHandler} />
+        Hey! <br/>
+        Welcome {user_name} <br/>
+        This is the main page for the AWS web application deployed on EC2 and build with React JS and Node JS with the use of AWS Lambda and API Gateway.<br/>
+        {/*<img src={require('./architecture_diagram.jpg')} alt = "" />*/}
+        We would love if you could register with us!
+        <div><Link to="/register"><button>Register</button></Link></div>
+        Already have an account?<p className = "link"><Link to = "/login">Login instead</Link></p>
         </div>
     )
 } 

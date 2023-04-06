@@ -12,7 +12,7 @@ function App() {
         <NavLink exact activeClass = "active" to="/">Home</NavLink>
         <NavLink activeClassName = "active" to="/register">Register</NavLink>
         <NavLink activeClassName = "active" to="/login">Login</NavLink>
-        <NavLink activeClassName = "active" to="/subscription">Subscription</NavLink>
+        <NavLink activeClassName = "active" to="/subscription">Subscription Area</NavLink>
       </div>
       <div className="content">
       <Routes>

@@ -23,6 +23,9 @@ code {
   color:rgb(27, 27, 27);
   font-weight: 500;
 }
+h5{
+  font-size: 1.1em;
+}
 .header a:hover{
   color:rgb(255, 255, 255);
   font-weight: 600;
@@ -30,7 +33,7 @@ code {
 
 .content {
   margin-left: 2em;
-  font-size: 1.5em;
+  font-size: 1.2em;
 }
 .message {
   color: red;
@@ -61,6 +64,7 @@ form
     margin-right: auto;
     text-align: left;
     width: 20%;
+    border-radius: 10px;
 }
 input{
   height: 30px;
@@ -85,4 +89,7 @@ input[type=submit]{
 input[type=submit]:hover{
   background-color: rgb(27, 27, 27);
   color: beige;
+}
+input[type=text]{
+  margin-bottom: 15px;
 }
