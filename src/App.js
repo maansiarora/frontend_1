@@ -4,6 +4,10 @@ import Register from "./Register";
 import Login from "./Login";
 import Subscription from "./Subscription";
 
+
+// taken reference from youtube: https://www.youtube.com/watch?v=ReNkQ0Xkccw&t=1913s
+// reference from Mdn Documents for css
+ 
 function App() {
   return (
     <div className="App">

@@ -5,6 +5,8 @@ import { setUserSession } from './service/AuthService'
 
 const registerUrl = 'https://4m2tcg1vr0.execute-api.us-east-1.amazonaws.com/prod/register';
 
+// taken reference from youtube: https://www.youtube.com/watch?v=ReNkQ0Xkccw&t=1913s
+
 const Register = () => {
     const [email, setEmail] = useState('');
     const [user_name, setUsername] = useState('');
@@ -15,7 +17,7 @@ const Register = () => {
     const submitHandler = (event) => {
         event.preventDefault();
         if (user_name.trim() === '' || email.trim() === '' || password.trim() === '') {
-            setMessage('All fields are required');
+            setMessage('All the fields are required.');
             return;
         }
         setMessage(null);
@@ -37,7 +39,7 @@ const Register = () => {
             if (error.response.status === 401 || error.response.status === 403) {
               setMessage(error.response.data.message);
             } else {
-              setMessage('sorry....the backend server is down!! please try again later');
+              setMessage('The backend server is currently down.');
             }
           })
     }

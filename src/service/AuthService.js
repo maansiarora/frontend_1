@@ -1,3 +1,5 @@
+// taken reference from youtube: https://www.youtube.com/watch?v=ReNkQ0Xkccw&t=1913s
+
 module.exports = {
     getUser: function() {
       const user = sessionStorage.getItem('user');

@@ -4,6 +4,8 @@ import axios from 'axios';
 import { getUser, resetUserSession } from './service/AuthService';
 import { useNavigate } from "react-router-dom";
 
+// taken reference from youtube: https://www.youtube.com/watch?v=ReNkQ0Xkccw&t=1913s
+
 function Subscription() {
   const [musicData, setMusicData] = useState([]);
   const [artistImageURLs, setArtistImageURLs] = useState({});

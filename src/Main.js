@@ -9,8 +9,6 @@ const Main = () => {
     console.log(user)
     const user_name = user !== 'undefined' && user ? user.user_name : '';
     
-
-    
     return (
         <div className="text">
         <h5>Hey! <br/>

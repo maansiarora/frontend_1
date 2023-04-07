@@ -4,6 +4,8 @@ import axios from 'axios';
 import { setUserSession } from './service/AuthService'
 const loginAPIUrl = 'https://4m2tcg1vr0.execute-api.us-east-1.amazonaws.com/prod/login';
 
+// taken reference from youtube: https://www.youtube.com/watch?v=ReNkQ0Xkccw&t=1913s
+
 const Login = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -13,7 +15,7 @@ const Login = () => {
   const submitHandler = (event) => {
     event.preventDefault();
     if (email.trim() === '' || password.trim() === '') {
-      setErrorMessage('Both email and password are required');
+      setErrorMessage('Both Email and Password are required.');
       return;
     }
     setErrorMessage(null);
@@ -38,7 +40,7 @@ const Login = () => {
       if (error.response.status === 401 || error.response.status === 403) {
         setErrorMessage(error.response.data.message);
       } else {
-        setErrorMessage('sorry....the backend server is down. please try again later!!');
+        setErrorMessage('The backend is currently down!');
       }
     })
   }
