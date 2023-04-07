@@ -110,3 +110,59 @@ button{
   padding-top: 20px;
   font-size: 0.6em;
 }
+input[type=button]{
+  background-color: rgba(227, 171, 154, 1);
+  height: 40px;
+  border-radius: 5px;
+  width: 100px;
+  border: 0;
+  font-weight: 500;
+  font-size: large;
+  margin-top: 10px;
+}
+input[type=button]:hover{
+  background-color: rgb(27, 27, 27);
+  color: beige;
+  cursor: pointer;
+}
+h3{
+  padding-top: 20px;
+}
+table {
+  margin: 0 auto;
+  margin-top:50px;
+  margin-left:30px;
+  border-collapse: collapse;
+  width: 90%;
+}
+
+th, td {
+  text-align: left;
+  padding: 8px;
+}
+
+th {
+  background-color: rgba(245, 225, 218, 1);
+}
+
+tr:nth-child(even) {
+  background-color: rgb(249, 237, 232);
+}
+
+button {
+  background-color: rgba(227, 171, 154, 1);
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.images img {
+  max-width: 130px;
+  max-height: 130px;
+}

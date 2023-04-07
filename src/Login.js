@@ -32,7 +32,7 @@ const Login = () => {
       
       
       setUserSession(response.data.user, response.data.token);
-      navigate('/');
+      navigate('/subscription');
     }).catch((error) => {
         console.log(error)
       if (error.response.status === 401 || error.response.status === 403) {
