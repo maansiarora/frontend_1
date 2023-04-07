@@ -12,14 +12,15 @@ const Main = () => {
 
     
     return (
-        <div>
-        Hey! <br/>
-        Welcome {user_name} <br/>
+        <div className="text">
+        <h5>Hey! <br/>
+        Welcome {user_name} <br/></h5>
         This is the main page for the AWS web application deployed on EC2 and build with React JS and Node JS with the use of AWS Lambda and API Gateway.<br/>
-        {/*<img src={require('./architecture_diagram.jpg')} alt = "" />*/}
+        <br/>
+        <center><img src={require('./architecture_diagram.jpg')} alt = ""/></center><br/>
         We would love if you could register with us!
         <div><Link to="/register"><button>Register</button></Link></div>
-        Already have an account?<p className = "link"><Link to = "/login">Login instead</Link></p>
+        <div className="smalltext">Already have an account? <span className = "link"><Link to = "/login">Login</Link></span></div>
         </div>
     )
 } 

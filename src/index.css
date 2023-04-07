@@ -93,3 +93,20 @@ input[type=submit]:hover{
 input[type=text]{
   margin-bottom: 15px;
 }
+.text{
+  padding: 50px;
+  padding-top: 0;
+  font-size: 1.2em;
+}
+button{
+  background-color: rgba(227, 171, 154, 1);
+  height: 35px;
+  width: 100px;
+  border-radius: 5px;
+  border: 0;
+  
+}
+.smalltext{
+  padding-top: 20px;
+  font-size: 0.6em;
+}
